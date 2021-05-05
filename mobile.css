@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+}
+body {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  color: #FFF;
+  background: #000 url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-weight: lighter;
+  font-size: 3em;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-bottom: 1.5em;
+}
+p, table, #lvlUp, input, .popup, #editor, #badge {
+  letter-spacing: 0.025em;
+  margin: 1em;
+  display: none;
+}
+a, a:link, a:visited {
+  color: inherit;
+}
+a:hover {
+  text-shadow: 0 0 2px #FFF;
+}
+footer {
+  font-size: 0.7em;
+  position: absolute;
+  width: 100%;
+  bottom: 2em;
+  letter-spacing: 0.05em;
+  color: #CCC;
+}
+footer a:hover {
+  text-shadow: none;
+  color: #FFF;
+}
+#mobile {
+  display: block;
+}

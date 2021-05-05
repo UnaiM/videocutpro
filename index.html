@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset='utf-8'>
+<title>Video Cut Pro</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,900'>
+<link rel='stylesheet' href='styles.css' id='theStyle'>
+<script src='YouTubeGetID.js'></script>
+<script src='https://apis.google.com/js/api.js'></script>
+
+</head>
+<body>
+
+<div id='main'>
+  <h1>Video Cut Pro</h1>
+  <p id='mobile'>This site only works on desktop computers.</p>
+  <div id='badge'>MENTIONED<br>
+    AT <strong><a href='//sitc-event.co.uk'>SUMMER<br>
+    IN THE CITY<br>
+    2016</a></strong>!</div>
+  <p>Pick a video from:</p>
+  <table>
+    <tr>
+      <td><label for='inCO' class='button'>Computer</label><br>
+        <small><a href='#privacy'>WHY IS THIS SAFE?</a></small></td>
+      <td><a href='#youtube' class='button'>YouTube</a></td>
+      <td><a href='#random' class='button'>Random</a><br>
+        <small>FROM YOUTUBE</small></td>
+      <td class='disable'>Vimeo<br>
+        <small><a href='#vimeo'>COMING SOON?</a></small></td>
+    </tr>
+  </table>
+  <p>…and edit like never before. | <a href='#about'>About</a></p>
+</div>
+<footer>© 2016 <a href='//unaimb.com'>Unai Martínez Barredo</a> – All rights reserved, except for the name.</footer>
+<div id='lvlUp'></div>
+<input type='file' id='inCO' accept='video/*'>
+<div class='popup' id='youtube'>
+  <form action='.'>
+    <label for='inYT'>Enter the link to a YouTube video:</label>
+    <input type='text' id='inYT'>
+    <input type='text' id='parsedYT' name='v' hidden>
+    <button>Done</button>
+  </form>
+</div>
+<div class='popup' id='random'>
+  <div class='spindle'></div>
+  <p>Getting random YouTube video…</p>
+</div>
+<div class='popup' id='privacy'>
+  <p>Nothing will be uploaded anywhere — our cutting-edge technology allows you to edit whichever video you like on your side, with complete privacy.</p>
+</div>
+<div class='popup' id='vimeo'>
+  <p>No. There will <strong>never</strong> be support for Vimeo.</p>
+  <p>I T . &nbsp; M U S T . &nbsp; D I E .</p>
+</div>
+<div class='popup' id='about'>
+  <p>Video Cut Pro is much more than a website. Thanks to its state-of-the-art coding, you can edit your videos without needing to install any piece of software, providing unparalleled results. Everything happens on your side, so once the site has loaded, you can work offline too!</p>
+  <p>Please note that Video Cut Pro only works on web browsers that are at least <strong>mildly competent</strong> (ie. not IE).</p>
+</div>
+<div class='popup' id='loading'>
+  <div class='spindle'></div>
+  <p>Loading video…</p>
+</div>
+<div class='popup' id='COerrNF'>
+  <p>Can’t remember which video you picked. Please try again.</p>
+</div>
+<div class='popup' id='COerrLD'>
+  <p>There was an error loading the video you picked. Video Cut Pro works best with .mp4 or .m4v files encoded in H.264 format.</p>
+</div>
+<div class='popup' id='YTerrID'>
+  <p>The URL doesn’t contain a valid YouTube video ID. A valid ID consists of 11 characters that can be letters, numbers, hyphens or undescores.</p>
+</div>
+<div class='popup' id='YTerrNF'>
+  <p>The YouTube video wasn’t found. It might have been removed, marked as private, or set to not be playable outside the YouTube website.</p>
+</div>
+<div id='editor'>
+  <video autoplay loop></video>
+  <div id='playerEle'></div>
+  <canvas id='can1'></canvas>
+  <canvas id='can2'></canvas>
+  <button id='mute' title='Mute'></button>
+  <div class='tooltip' id='stepA'>
+    <p>Welcome to the <strong>Editor</strong>. To make yor first cut, click and drag on top of the video. It’s so easy you’ll get it right away ;)</p>
+    <button>Got it</button>
+  </div>
+  <div class='tooltip' id='stepB'>
+    <p>CONGLATURATIONS!!!!!1! You made your first cut. Wasn’t it easy?</p>
+    <button>Got it ¬¬</button>
+  </div>
+</div>
+<script src='checkMobile.js'></script>
+<script src='btnHighlight.js'></script>
+<script src='popups.js'></script>
+<script src='prepCO.js'></script>
+<script src='prepYT.js'></script>
+<script src='prepRN.js'></script>
+<script src='loadVideo.js'></script>
+<script src='editVideo.js'></script>
+
+</body>
+</html>

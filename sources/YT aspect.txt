@@ -1,0 +1,7 @@
+            Meta | YQL xxxxxxxxxxxxxxxxxxx
+  Meta | CORS Anywhere xxxxxxxxxxxxxxxxxx
+Meta | Whatever Origin xxxxxxxxxxxxxxxxxxx
+               Noembed xxxxxxxxxxxxxxxxxx
+
+Vertical video always gets 4:3 aspect response
+Noembed is always a bit off with 4:3, like 1.33430…
